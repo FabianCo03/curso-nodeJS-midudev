@@ -1,7 +1,5 @@
-// console.log(window);
-// error común en NodeJS
-// NodeJS es un entorno diferente al navegador
-// Por lo tanto el objeto 'window' no existe
-console.log(typeof window); // undefined
+// CommonJS require module
 
-console.log(globalThis); // es la variable global tanto de Node y del navegador
+const { sum } = require("./sum"); // importar módulo sum
+
+console.log(sum(2, 2));
